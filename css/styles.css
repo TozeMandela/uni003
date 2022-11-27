@@ -1,0 +1,158 @@
+@charset 'utf-8';
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+    font-family: var(--Froboto);
+    font-weight: 300;
+
+}
+:root{
+    --Froboto: 'Roboto', sans-serif;
+    --p1:  #284a75;
+    --p2: #ffa23b;
+    --p3: #FFBD39;
+}
+body{
+   
+}
+.container{
+    max-width: 940px;
+    margin: auto;
+    box-shadow: 2px 2px 6px black;
+}
+header{
+    background-color:var(--p1);
+    height: 60px;
+}
+header div{
+    display: flex;
+    justify-content: space-around;
+    line-height: 60px;
+    color: var(--p3)
+}
+a{
+    text-decoration: none;
+    color: var(--p2);
+}
+header div .menu ul{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 20px;
+}
+
+header div .menu ul li{
+    text-decoration: none;
+    float: left;
+    color: var(--p2);
+    padding-right: 10px;
+    font-size: 1.3em;
+
+}
+header div .menu ul li:hover{
+    color:white;
+    transition: 1s;
+    cursor: pointer;
+}
+header div .menu ul li a:hover{
+    color:white;
+    transition: 1s;
+    cursor: pointer;
+}
+.navbar{
+    height: 444px;
+    background: var(--p1) url('../media/navbarBackground1.png') no-repeat;
+    overflow: hidden;
+}
+.navbar .img img{
+    position: relative;
+    top: -24px;
+    left: 35px;
+    float: right;
+}
+.navbar h1{
+    position: relative;
+    bottom: -286px;
+    left: 240px;
+    color: white;
+    font-size: 2.5em;
+}
+.destaques{
+    min-height: 444px;
+    margin-top: 30px;
+}
+.principal .destaques .navbarart {
+    display: flex;
+    justify-content: space-around;
+}
+.principal .destaques .apres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.principal .destaques .apres div.a1{
+width: 400px;
+padding-left: 10px;
+}
+
+.principal .destaques .navbarart{
+    margin-top: 10px;
+} 
+.principal .destaques .navbarart div{
+    height: 200px;
+    width: 200px;
+    background-color: #FFBD39;
+}
+h6{
+    position: relative;
+    max-width: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+.destaq{
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid #ffa23b;
+    background-color: var(--p1);
+}
+.sobre{
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid #ffa23b;
+    background-color: var(--p1);
+    position: relative;
+    left: 470px;
+}
+footer{
+    color: var(--p2);
+    background-color: var(--p1);
+    min-height: 200px;
+    padding: 10px;
+}
+.rodaC{
+    display: flex;
+    justify-content: 
+    space-around;
+    align-items: center;
+}
+label, button{
+    display: block;
+}
+textarea{
+    resize: none;
+    height: 90px;
+}
+input, textarea, button{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+input{
+    height: 40px;
+}
+button{
+    background-color: var(--p3);
+}
